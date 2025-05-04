@@ -1,0 +1,119 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F2F2F2;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.8s ease;
+}
+
+/* Animación de aparición suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Título principal */
+h1 {
+    color: #134BF2;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Formulario de nueva tarea */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input para escribir tarea */
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #B8BBBF;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Botón de añadir tarea */
+form button {
+    background-color: #0C87F2;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1BA0F2;
+}
+
+/* Lista de tareas */
+#task-list {
+    list-style: none;
+}
+
+/* Cada tarea */
+.task-item {
+    background-color: #F2F2F2;
+    border: 1px solid #B8BBBF;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Texto de la tarea */
+.task-text {
+    flex: 1;
+    font-size: 16px;
+    word-break: break-word;
+}
+
+/* Botones de acciones (Hecho, Editar, Borrar) */
+.task-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 8px;
+    transition: transform 0.2s ease;
+}
+
+.task-actions button:hover {
+    transform: scale(1.2);
+}
+
+/* Estilo para tarea completada */
+.completed .task-text {
+    text-decoration: line-through;
+    color: #B8BBBF;
+}

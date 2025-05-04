@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <!-- Vinculación del CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fuente Montserrat de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>TAREAS DE HOY</h1>
+
+        <!-- Formulario para agregar nuevas tareas -->
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Agregar nueva tarea..." required>
+            <button type="submit">Añadir</button>
+        </form>
+
+        <!-- Lista donde se van a mostrar las tareas -->
+        <ul id="task-list">
+            <!-- Las tareas aparecerán aquí dinámicamente -->
+        </ul>
+    </div>
+
+    <!-- Vinculación del JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

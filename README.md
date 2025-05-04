@@ -24,5 +24,5 @@ Aplicación web simple e interactiva que permite a los usuarios gestionar sus ta
 ## 📁 Cómo clonar este repositorio
 
 ```bash
-git clone https://github.com/entoncespuma/to-do-list/
+git clone https://github.com/entoncespuma/to-do-list.git/
 cd to-do-list
